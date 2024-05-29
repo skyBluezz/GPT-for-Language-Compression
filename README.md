@@ -1,8 +1,10 @@
-# Enwik8
+# Novel Additions to GPT to Improve Compression on enwik8 
+
+  In this work, we want to take a crack at character-level modeling by training and evaluating on the [enwik8](https://mattmahoney.net/dc/textdata.html) dataset, a widely used benchmark for evaluating LLMs and their ability to perform language compression.  More specifically, enwik8 is the first 10e9 bytes of the English Wikipedia dump on Mar. 3, 2006
 
 ## Intro
 
-To begin, I pulled NanoGPT as the boilerplate model / codebase.  My background is primarily outside of NLP, so I will shoot from the hip on some of my novel ideas :)
+To begin, I pulled Andrei Karpathy's [NanoGPT](https://github.com/karpathy/nanoGPT) as the boilerplate model / codebase.  My background is primarily outside of NLP, so I will shoot from the hip on some of my novel ideas :)
   - *Data loading* - I downloaded enwik8 dataset and cleaned it down to a subset of characters.  Using [wikifil.pl](sky-nanoGPT/data/enwik8/wikifil.pl) from the Enwik website, I removed all special characters and only kept Alphanumeric and spaces.  We spell out our numbers.  Thus a vocab of 27 characters, rather than thousands in the original dataset. We are left with a dataset of length 74 MM characters. To load data and run this on your end, simply enter sky-nanoGPT directory and do the following.
 
 ```
