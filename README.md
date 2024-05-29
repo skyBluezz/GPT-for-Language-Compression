@@ -4,8 +4,9 @@
 
 ## Intro
 
-To begin, I pulled Andrei Karpathy's [NanoGPT](https://github.com/karpathy/nanoGPT) as the boilerplate model / codebase.  My background is primarily outside of NLP, so I will shoot from the hip on some of my novel ideas :)
-  - *Data loading* - I downloaded enwik8 dataset and cleaned it down to a subset of characters.  Using [wikifil.pl](sky-nanoGPT/data/enwik8/wikifil.pl) from the Enwik website, I removed all special characters and only kept Alphanumeric and spaces.  We spell out our numbers.  Thus a vocab of 27 characters, rather than thousands in the original dataset. We are left with a dataset of length 74 MM characters. To load data and run this on your end, simply enter sky-nanoGPT directory and do the following.
+To begin, I pulled Andrei Karpathy's [NanoGPT](https://github.com/karpathy/nanoGPT) as the boilerplate model / codebase. 
+
+  - *Data loading* - Lets download enwik8 dataset and clean it down to a subset of characters.  Using [wikifil.pl](sky-nanoGPT/data/enwik8/wikifil.pl) from the Enwik website, I removed all special characters and only kept Alphanumeric and spaces.  We spell out our numbers.  Thus a vocab of 27 characters, rather than thousands in the original dataset. We are left with a dataset of length 74 MM characters. To load data and run this on your end, simply enter sky-nanoGPT directory and do the following.
 
 ```
 pip install -r requirements.txt
